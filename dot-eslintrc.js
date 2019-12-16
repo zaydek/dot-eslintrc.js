@@ -1,4 +1,4 @@
-// Dependencies:
+// Assumes dependencies:
 //
 // yarn --dev     \
 //   @babel/core  \ # Babel core.
