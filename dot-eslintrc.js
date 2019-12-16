@@ -9,17 +9,8 @@ module.exports = {
 	parser: "babel-eslint",
 	parserOptions: { sourceType: "module" },
 	rules: {
-		"init-declarations":                   2, // require or disallow initialization in variable declarations
-		"max-statements-per-line":             2, // enforce a maximum number of statements allowed per line
-		"no-nested-ternary":                   2, // disallow nested ternary expressions
+		"no-unused-vars":                      0, // disallow unused variables
 
-		// yarn eslint --ignore-pattern=build .
-		//
-		// https://eslint.org/docs/rules
-		//
-		// [...document.querySelectorAll(".glyphicon-wrench")].slice(1).map(each => each.parentElement.parentElement.innerText.split("\t")[2]).join("\n")
-		// [...document.querySelectorAll(".glyphicon-wrench")].slice(1).map(each => each.parentElement.parentElement.innerText.split("\t")[3]).join("\n")
-		//
 		"array-bracket-newline":               1, // enforce linebreaks after opening and before closing array brackets
 		"array-bracket-spacing":               1, // enforce consistent spacing inside array brackets
 		"array-element-newline":               [1, "consistent"], // enforce line breaks after each array element
@@ -59,15 +50,6 @@ module.exports = {
 		// "no-extra-bind":                    1, // disallow unnecessary calls to `.bind()`
 		// "no-extra-boolean-cast":            1, // disallow unnecessary boolean casts
 		// "no-extra-label":                   1, // disallow unnecessary labels
-
-		// Doesn’t cover:
-		//
-		// <p>
-		//   {true && (
-		//     "hello, world!"
-		//   )}
-		// </p>
-		//
 		// "no-extra-parens":                  [1, "all", { nestedBinaryExpressions: false, ignoreJSX: "all" }], // disallow unnecessary parentheses
 		// "no-extra-semi":                    1, // disallow unnecessary semicolons
 		// "no-floating-decimal":              1, // disallow leading or trailing decimal points in numeric literals
@@ -89,7 +71,7 @@ module.exports = {
 		"object-curly-newline":                [1, { consistent: true }], // enforce consistent line breaks inside braces
 		"object-curly-spacing":                [1, "always"], // enforce consistent spacing inside braces
 		"object-property-newline":             [1, { allowAllPropertiesOnSameLine: true }], // enforce placing object properties on separate lines
-		"object-shorthand":                    [1, "consistent-as-needed"], // require or disallow method and property shorthand syntax for object literals
+		"object-shorthand":                    1, // require or disallow method and property shorthand syntax for object literals
 		// "one-var":                          1, // enforce variables to be declared either together or separately in functions
 		// "one-var-declaration-per-line":     1, // require or disallow newlines around variable declarations
 		"operator-assignment":                 1, // require or disallow assignment operator shorthand where possible
@@ -109,8 +91,6 @@ module.exports = {
 		"semi":                                [1, "never"], // require or disallow semicolons instead of ASI
 		// "semi-spacing":                     1, // enforce consistent spacing before and after semicolons
 		// "semi-style":                       1, // enforce location of semicolons
-
-		// https://github.com/eslint/eslint/issues/11542.
 		// "sort-imports":                     1, // enforce sorted import declarations within modules
 		// "sort-vars":                        1, // require variables within the same declaration block to be sorted
 		"space-before-blocks":                 1, // enforce consistent spacing before blocks
@@ -123,12 +103,14 @@ module.exports = {
 		"switch-colon-spacing":                1, // enforce spacing around colons of switch statements
 		"template-curly-spacing":              1, // require or disallow spacing around embedded expressions of template strings
 		"template-tag-spacing":                1, // require or disallow spacing between template tags and their literals
-
-		// https://stackoverflow.com/a/38038099
 		"unicode-bom":                         1, // require or disallow Unicode byte order mark (BOM)
 		"wrap-iife":                           [1, "inside"], // require parentheses around immediate `function` invocations
 		// "wrap-regex":                       1, // require parenthesis around regex literals
 		// "yield-star-spacing":               1, // require or disallow spacing around the `*` in `yield*` expressions
 		"yoda":                                1, // require or disallow "Yoda" conditions
+
+		"init-declarations":                   2, // require or disallow initialization in variable declarations
+		"max-statements-per-line":             2, // enforce a maximum number of statements allowed per line
+		"no-nested-ternary":                   2, // disallow nested ternary expressions
 	},
 }
