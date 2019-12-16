@@ -1,10 +1,3 @@
-// Assumes dependencies:
-//
-// yarn --dev     \
-//   @babel/core  \ # Babel core.
-//   babel-eslint \ # Babel parser for ESLint.
-//   eslint       \ # ESLint core and CLI.
-//
 module.exports = {
 	env: {
 		browser: true,
