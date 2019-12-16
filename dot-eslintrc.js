@@ -86,7 +86,7 @@ module.exports = {
 		"no-var":                              1, // require `let` or `const` instead of `var`
 		"no-whitespace-before-property":       1, // disallow whitespace before properties
 		// "nonblock-statement-body-position": 1, // enforce the location of single-line statements
-		"object-curly-newline":                [1, { multiline: true }], // enforce consistent line breaks inside braces
+		"object-curly-newline":                [1, { consistent: true }], // enforce consistent line breaks inside braces
 		"object-curly-spacing":                [1, "always"], // enforce consistent spacing inside braces
 		"object-property-newline":             [1, { allowAllPropertiesOnSameLine: true }], // enforce placing object properties on separate lines
 		"object-shorthand":                    [1, "consistent-as-needed"], // require or disallow method and property shorthand syntax for object literals
