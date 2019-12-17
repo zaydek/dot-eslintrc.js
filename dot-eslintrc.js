@@ -20,7 +20,7 @@ module.exports = {
 		// "block-spacing":                    1, // disallow or enforce spaces inside of blocks after opening block and before closing block
 		"brace-style":                         1, // enforce consistent brace style for blocks
 		// "capitalized-comments":             1, // enforce or disallow capitalization of the first letter of a comment
-		"comma-dangle":                        [1, "always-multiline"], // require or disallow trailing commas
+		"comma-dangle":                        [1, { arrays: "always-multiline", objects: "always-multiline", imports: "always-multiline", exports: "always-multiline", functions: "always-multiline" }], // require or disallow trailing commas
 		"comma-spacing":                       1, // enforce consistent spacing before and after commas
 		"comma-style":                         1, // enforce consistent comma style
 		"computed-property-spacing":           1, // enforce consistent spacing inside computed property brackets
