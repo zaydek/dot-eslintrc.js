@@ -15,7 +15,7 @@
 
 <br>
 
-**.eslintrc.js formats your JavaScript code for you, so you can focus on what matters.** Most people think of ESLint as an annoying linter that simply yells at you every time you screw something up. 🥵 But did you know of all the rules ESLint supports, just less than 100 can fix your code, too? `.eslintrc.js` is just such a configuration file to make ESLint _extremely useful_ and productive.
+**.eslintrc.js formats your JavaScript code for you so you can focus on what matters.** Most people think of ESLint as an annoying linter that simply yells at you every time you screw something up. 🥵 But did you know of all the rules ESLint supports, just less than 100 can fix your code, too? `.eslintrc.js` is just such a configuration file to make ESLint _extremely useful_ and productive.
 
 The configuration preferences themselves are heavily inspired by `gofmt`, the delightful Go language formatter. Each and every rule this configuration uses for auto-formatting was carefully considered. More than that, [I myself](https://twitter.com/username_ZAYDEK) rely on this configuration file _everyday_ and maintain the preferences as needed.
 
