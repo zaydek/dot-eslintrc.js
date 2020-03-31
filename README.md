@@ -3,7 +3,7 @@
   <h1>
     <br>
     <br>
-    .eslintrc.js 🧹
+    .eslintrc.js 🧹✨
     <br>
     <br>
     <br>
