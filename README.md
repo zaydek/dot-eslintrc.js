@@ -28,3 +28,5 @@ curl https://raw.githubusercontent.com/codex-src/dot-eslintrc.js/master/dot-esli
 ```
 
 This downloads the configuration file into the current directory, creating or overwriting `.eslintrc.js` — ESLint relies on this filename. Assuming your project already uses ESLint, all you need to do is invoke ESLint going forwards with the `--fix` command. I myself use [ESLint-Formatter](https://github.com/TheSavior/ESLint-Formatter) with Sublime Text 3 to invoke ESLint with a shortcut: `⇧⌘3`.
+
+**Create React App users:** Good news! 👍 If you’re using CRA, _React already packages ESLint_ meaning all you need to do is add a package to your editor that invokes ESLint with the `--fix` command (see example above). Generally, you can toggle auto-formatting on save or for a given shortcut (my personal preference). _If nothing happens_ that usually means something is wrong with your JavaScript and you need to fix your code in order to proceed. This is the same behavior as when using `gofmt`.
