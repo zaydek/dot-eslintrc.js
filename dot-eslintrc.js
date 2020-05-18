@@ -10,8 +10,6 @@ module.exports = {
 	parser: "babel-eslint",
 	parserOptions: { sourceType: "module" },
 	rules: {
-		"no-unused-vars":                   0, // disallow unused variables
-
 		"array-bracket-newline":            [1, "consistent"], // enforce linebreaks after opening and before closing array brackets
 		"array-bracket-spacing":            1, // enforce consistent spacing inside array brackets
 		"array-element-newline":            [1, "consistent"], // enforce line breaks after each array element
@@ -109,9 +107,5 @@ module.exports = {
 		"wrap-regex":                       0, // require parenthesis around regex literals
 		"yield-star-spacing":               0, // require or disallow spacing around the `*` in `yield*` expressions
 		"yoda":                             1, // require or disallow "Yoda" conditions
-
-		"init-declarations":                2, // require or disallow initialization in variable declarations
-		"max-statements-per-line":          2, // enforce a maximum number of statements allowed per line
-		"no-nested-ternary":                2, // disallow nested ternary expressions
 	},
 }
