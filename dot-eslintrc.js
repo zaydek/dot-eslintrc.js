@@ -1,4 +1,4 @@
-// https://github.com/codex-src/dot-eslintrc.js
+// https://github.com/zaydek/dot-eslintrc.js
 module.exports = {
 	env: {
 		browser: true,
